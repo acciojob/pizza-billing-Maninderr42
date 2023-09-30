@@ -22,15 +22,16 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         if(this.isVeg){
-            price=300;
+            baseprice=300;
             toppingsPrice=70;
         }else{
-           price=400;
+           baseprice=400;
            toppingsPrice=80;
         }
         choosePrice=80;
         bagPrice=20;
         this.price=baseprice;
+
     }
 
 
@@ -65,6 +66,7 @@ public class Pizza {
         if(!isBillGenerated){
             isBillGenerated=true;
             this.bill="Base Price Of The Pizza: "+this.baseprice+"\n";
+
             if(isCheeseAdded){
                 this.bill=this.bill+"Extra Cheese Added: "+this.choosePrice+"\n";
             }
@@ -74,7 +76,7 @@ public class Pizza {
             if(isCarryBagAdded){
                 this.bill=this.bill+"PaperBag Added: "+this.bagPrice+"\n";
             }
-            this.bill=this.bill+"Total Price: "+this.bill+"\n";
+            this.bill=this.bill+"Total Price: "+this.price+"\n";
         }
 return this.bill;
 

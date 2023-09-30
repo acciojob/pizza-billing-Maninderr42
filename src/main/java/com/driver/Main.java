@@ -9,10 +9,10 @@ public class Main {
     dp.addExtraToppings();
     System.out.println(dp.getBill()); //600+20+80+120||70
 
-    Pizza p = new Pizza(true);
+    Pizza p = new Pizza(false);
     p.addExtraCheese();
     p.addExtraToppings();
-    p.addTakeaway();
+    // p.addTakeaway();
     System.out.println(p.getBill());//400+80+120+20 = 620
   }
 }

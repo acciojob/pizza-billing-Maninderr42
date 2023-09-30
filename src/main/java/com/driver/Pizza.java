@@ -26,7 +26,7 @@ public class Pizza {
             toppingsPrice=70;
         }else{
            baseprice=400;
-           toppingsPrice=80;
+           toppingsPrice=120;
         }
         choosePrice=80;
         bagPrice=20;

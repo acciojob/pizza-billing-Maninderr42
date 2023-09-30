@@ -30,7 +30,9 @@ public class Pizza {
         }
         choosePrice=80;
         bagPrice=20;
+        this.price=baseprice;
     }
+
 
     public int getPrice(){
 
@@ -40,7 +42,7 @@ public class Pizza {
     public void addExtraCheese(){
         if(!isCheeseAdded){
             isCheeseAdded=true;
-            price+=choosePrice;
+           this. price+=choosePrice;
         }
 
     }
@@ -48,13 +50,13 @@ public class Pizza {
     public void addExtraToppings() {
         if(!isToppingsAdded){
             isToppingsAdded=true;
-            price+=toppingsPrice;
+            this.price+=toppingsPrice;
         }
     }
     public void addTakeaway() {
         if (!isCarryBagAdded) {
             isCarryBagAdded=true;
-            price += bagPrice;
+            this.price += bagPrice;
         }
     }
 

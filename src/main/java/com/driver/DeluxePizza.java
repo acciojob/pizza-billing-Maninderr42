@@ -4,13 +4,7 @@ public class DeluxePizza extends Pizza {
 
     public DeluxePizza(Boolean isVeg) {
         super(isVeg);
-        super.getPrice();
-
-
-        super.addTakeaway();
-
         super.addExtraCheese();
         super.addExtraToppings();
-        super.getBill();
     }
 }
